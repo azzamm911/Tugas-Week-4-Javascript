@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p, td {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.calc-wrapper {
+    margin: 150px 0 0 450px;
+    width: 450px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.calc-top input, .calc-top, .calc-bottom {
+    width: 450px;
+}
+
+.calc-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.calc-top input {
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+#result, #result-temp {
+    width: 40%;
+}
+
+#operasi {
+    text-align: center;
+    width: 20%;
+}
+
+#result-temp {
+    text-align: right;
+    color: gray !important;
+}
+
+/* Untuk style calculator bagian bawah kiri */
+
+.calc-bottom {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.calc-bottom-left {
+    width: 60%;
+    background-color: gray;
+}
+
+#top, #middle, #bottom {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+tr {
+    height: 40px;
+    text-align:center;
+}
+
+.calc-bottom-left p {
+    width: 50%;
+    height: 35px;
+    padding: 6px;
+    display: inline-block;
+}
+
+/* Untuk style calculator bagian kanan */
+
+.calc-bottom-right {
+    width: 40%;
+    background-color: orange;
+}
+
+.calc-bottom-right p {
+    padding-top: 10px;
+    text-align: center;
+    height: 20%;
+}
+
+/* Event */
+
+.calc-bottom-left p:hover, td:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.calc-bottom-right p:hover {
+    cursor: pointer;
+    background-color: darkgoldenrod;
+}
